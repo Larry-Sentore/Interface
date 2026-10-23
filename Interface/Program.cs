@@ -76,6 +76,7 @@ public static class Program
 {
     public static void Main()
     {
+        //Using LSP by treating objects of derived classes (Trapezium, Circle, Nonagon) and assigning them to the base class (IShape) references.
         IShape trapezium = new Trapezium();
         Trapezium trapeziumsides = new Trapezium();
         IShape circle = new Circle();
