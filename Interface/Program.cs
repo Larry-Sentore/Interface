@@ -7,15 +7,15 @@
 
 public class Trapezium : IShape
 {
-    private int numberOfSides = 4;
     private int sideA = 3;
     private int sideB = 4;
     private int sideC = 7;
     private int sideD = 6;
     private int height = 5;
-    public double CalculateUnknownSides()
+    public void CalculateUnknownSides()
     {
-        return numberOfSides;
+        int[] sides = new int[] { sideA, sideB, sideC, sideD };
+        Console.WriteLine("Side Lengths of Trapezium: " + string.Join(", ", sides));
     }
 
     public double CalculateArea()
@@ -85,7 +85,7 @@ public static class Program
         Nonagon nonagonSides = new Nonagon();
 
         Console.WriteLine("-- Trapezium ---");
-        Console.WriteLine("Number of sides in Trapezium: " + trapeziumsides.CalculateUnknownSides());
+        trapeziumsides.CalculateUnknownSides();
         Console.WriteLine("Trapezium Area: " + trapezium.CalculateArea());
         Console.WriteLine("Trapezium Perimeter: " + trapezium.CalculatePerimeter());
 
