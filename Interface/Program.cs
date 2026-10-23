@@ -91,10 +91,10 @@ public static class Program
         Console.WriteLine("-- Circle ---");
         Console.WriteLine("Circle Area: " + circle.CalculateArea());
         Console.WriteLine("Circle Radius: " + circleRadius.CalculateRadius());
-        Console.WriteLine("Circle Perimeter: " + circle.CalculatePerimeter());
+        Console.WriteLine($"Circle Perimeter: {circle.CalculatePerimeter():F2}");
 
         Console.WriteLine("-- Nonagon ---");
-        Console.WriteLine("Nonagon Area: " + nonagon.CalculateArea());
+        Console.WriteLine($"Nonagon Area: {nonagon.CalculateArea():F2}");
         Console.WriteLine("Nonagon Perimeter: " + nonagon.CalculatePerimeter());
         Console.WriteLine("Number of sides in Nonagon: " + nonagonSides.CalculateNumberOfSides());     
     }
